@@ -19,6 +19,7 @@
  *  Include database-detail.h and other files
  *------------------------------------------------------------------*/
 
+#include <vector>
 #include "header.h"
 #include "database-detail.h"
 
@@ -28,6 +29,11 @@
  *  Description:  MySQL class for database accessability
  * ===================================================================
  */
+
+class QueryResolver {
+public:
+    virtual void run(MYSQL_RES* res_set) = 0;
+};
 
 class MySQL
 {
@@ -45,10 +51,8 @@ class MySQL
 
         /** Function to show tables in database */
         void ShowTables();
-        void find_book_by_name_is_in_storage();
+        void run_query(int, string&, vector<string>&, vector< pair<string, string> >&, QueryResolver*);
 
         /** MySQL Destructor */
         ~MySQL();
-
-    MYSQL_ROW get_res(string query);
 };

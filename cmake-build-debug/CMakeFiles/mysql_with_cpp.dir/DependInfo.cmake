@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database-main.cpp" "/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o"
-  "/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database.cc" "/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles/mysql_with_cpp.dir/database.cc.o"
+  "/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database-main.cpp" "/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o"
+  "/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database.cc" "/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles/mysql_with_cpp.dir/database.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

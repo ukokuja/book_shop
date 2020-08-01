@@ -44,10 +44,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp
+CMAKE_SOURCE_DIR = /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/mysql_with_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/mysql_with_cpp.dir/build.make CMakeFiles/mysql_with_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/mysql_with_cpp.dir/build.make CMakeFiles/mysql_with_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target mysql_with_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target mysql_with_cpp"
 .PHONY : CMakeFiles/mysql_with_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mysql_with_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mysql_with_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/mysql_with_cpp.dir/rule
 
 # Convenience name for target.

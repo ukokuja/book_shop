@@ -18,7 +18,7 @@
 # 	Variables
 # ====================================================================
 
-CC      =   g++
+CC      =   g++ -std=c++11
 LMYSQL  =   -I/usr/local/include -I/usr/local/include/mysql -W -lmysqlclient -L/usr/local/lib
 CFLAG   =   -c
 OFLAG   =   -o

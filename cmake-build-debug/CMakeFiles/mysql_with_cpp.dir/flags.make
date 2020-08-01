@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/. 
+CXX_INCLUDES = -I/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/. 
 

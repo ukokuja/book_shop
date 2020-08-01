@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp
+CMAKE_SOURCE_DIR = /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mysql_with_cpp.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/mysql_with_cpp.dir/flags.make
 
 CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o: CMakeFiles/mysql_with_cpp.dir/flags.make
 CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o: ../database-main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o -c /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database-main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o -c /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database-main.cpp
 
 CMakeFiles/mysql_with_cpp.dir/database-main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mysql_with_cpp.dir/database-main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database-main.cpp > CMakeFiles/mysql_with_cpp.dir/database-main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database-main.cpp > CMakeFiles/mysql_with_cpp.dir/database-main.cpp.i
 
 CMakeFiles/mysql_with_cpp.dir/database-main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mysql_with_cpp.dir/database-main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database-main.cpp -o CMakeFiles/mysql_with_cpp.dir/database-main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database-main.cpp -o CMakeFiles/mysql_with_cpp.dir/database-main.cpp.s
 
 CMakeFiles/mysql_with_cpp.dir/database.cc.o: CMakeFiles/mysql_with_cpp.dir/flags.make
 CMakeFiles/mysql_with_cpp.dir/database.cc.o: ../database.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mysql_with_cpp.dir/database.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mysql_with_cpp.dir/database.cc.o -c /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mysql_with_cpp.dir/database.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mysql_with_cpp.dir/database.cc.o -c /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database.cc
 
 CMakeFiles/mysql_with_cpp.dir/database.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mysql_with_cpp.dir/database.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database.cc > CMakeFiles/mysql_with_cpp.dir/database.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database.cc > CMakeFiles/mysql_with_cpp.dir/database.cc.i
 
 CMakeFiles/mysql_with_cpp.dir/database.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mysql_with_cpp.dir/database.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/database.cc -o CMakeFiles/mysql_with_cpp.dir/database.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/database.cc -o CMakeFiles/mysql_with_cpp.dir/database.cc.s
 
 # Object files for target mysql_with_cpp
 mysql_with_cpp_OBJECTS = \
@@ -95,7 +95,7 @@ mysql_with_cpp: CMakeFiles/mysql_with_cpp.dir/database-main.cpp.o
 mysql_with_cpp: CMakeFiles/mysql_with_cpp.dir/database.cc.o
 mysql_with_cpp: CMakeFiles/mysql_with_cpp.dir/build.make
 mysql_with_cpp: CMakeFiles/mysql_with_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable mysql_with_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable mysql_with_cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mysql_with_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/mysql_with_cpp.dir/clean:
 .PHONY : CMakeFiles/mysql_with_cpp.dir/clean
 
 CMakeFiles/mysql_with_cpp.dir/depend:
-	cd /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug /Users/lucaskujawski/Projects/personal/shenkar/mysql-with-cpp/cmake-build-debug/CMakeFiles/mysql_with_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug /Users/lucaskujawski/Projects/personal/shenkar/nudler/book_shop/cmake-build-debug/CMakeFiles/mysql_with_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mysql_with_cpp.dir/depend
 
