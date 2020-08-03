@@ -173,38 +173,38 @@ map<int, string> getQueries() {
 map<int, QueryResolver *> getResolver() {
     map<int, QueryResolver *> resolvers;
     resolvers[1] = new SimpleResolver("There are %s books");
-    resolvers[2] = new SimpleResolver("The client is: %s."); //MutliParamResolver
+    resolvers[2] = new SimpleResolver("The client is: %s.");
     resolvers[3] = new ListResolver("The book is: ",
                                     {"", "Published on: ", "Weight: ", "Amount of pages: ", "Written in: ",
-                                     "That arrived at: "}, 6); // MutliParamResolver
-    resolvers[4] = new ListResolver("The orders are: ", {"", "Done by: ", "On: "}, 3); // ListMutliParamResolver
+                                     "That arrived at: "}, 6);
+    resolvers[4] = new ListResolver("The orders are: ", {"", "Done by: ", "On: "}, 3);
     resolvers[5] = new SimpleResolver("The store sold: %s copies.");
     resolvers[6] = new SimpleResolver("The author is: %s.");
     resolvers[7] = new ListResolver("The clients are: ", {}, 1);
     resolvers[8] = new SimpleResolver("The book is: %s.");
-    resolvers[9] = new ListResolver("The buying history is: ", {"", "Price", "On: "}, 3); // ListResolver
+    resolvers[9] = new ListResolver("The buying history is: ", {"", "Price", "On: "}, 3);
     resolvers[10] = new ListResolver("The order history is: ", {"", "On: ", "Was found: ", "Was bought: "},
-                                     4); //ListResolver
+                                     4);
     resolvers[11] = new ListResolver("The shipping cost are: ",
-                                     {"", "Delivery type: ", "Delivered by: ", "Costs: $"}, 4); //ListResolver
+                                     {"", "Delivery type: ", "Delivered by: ", "Costs: $"}, 4);
     resolvers[12] = new ListResolver("The details are: ",
                                      {"", "Tracking number: ", "Delivery type: ", "Deliveried by: ", "Status: "}, 5);
     resolvers[13] = new SimpleResolver("The order status is: %s.");
     resolvers[14] = new SimpleResolver("The amount of sales is: %s");
     resolvers[15] = new SimpleResolver("The incomes are: %s.");
-    resolvers[16] = new ListResolver("The sales are: ", {"", "Client: ", "Cost: $"}, 3); //ListResolver
-    resolvers[17] = new ListResolver("The amount of sales are: ", {"", "Sales: "}, 2); //ListResolver
+    resolvers[16] = new ListResolver("The sales are: ", {"", "Client: ", "Cost: $"}, 3);
+    resolvers[17] = new ListResolver("The amount of sales are: ", {"", "Sales: "}, 2);
     resolvers[18] = new ListResolver("The deliveries are: ",
                                      {"", "Tracking number: ", "Status: ", "Delivery type: ", "Delivered by: "},
-                                     5); //ListResolver
+                                     5);
     resolvers[19] = new ListResolver("The clients are: ", {"", "Phone: ", "Mobile: ", "Joined on: "},
-                                     4); //ListResolver
+                                     4);
     resolvers[20] = new ListResolver("The clients are: ", {"", "Phone: ", "Mobile: ", "Joined on: "},
-                                     4); //ListResolver
-    resolvers[21] = new ListResolver("The books are: ", {"", "Month: ", "Books: "}, 3); //ListResolver
-    resolvers[22] = new ListResolver("During that date: ", {"Purchases: ", "Cost: $"}, 2); //ListResolver
+                                     4);
+    resolvers[21] = new ListResolver("The books are: ", {"", "Month: ", "Books: "}, 3);
+    resolvers[22] = new ListResolver("During that date: ", {"Purchases: ", "Cost: $"}, 2);
     resolvers[23] = new SimpleResolver("The profit is: %s.");
-    resolvers[24] = new ListResolver("The averages are:", {"", "Average: "}, 2); //ListResolver
+    resolvers[24] = new ListResolver("The averages are:", {"", "Average: "}, 2);
     resolvers[25] = new SimpleResolver("The net salary was: %s");
     resolvers[26] = new SimpleResolver("The employee is: %s");
     return resolvers;
