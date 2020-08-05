@@ -138,25 +138,25 @@ create table if not exists book_storage (
 		constraint unique(book_copy_id, storage_id, start_date),
 		constraint unique(book_copy_id, storage_id, end_date)
 );
-insert into book_storage (book_copy_id, storage_id, start_date) values (1, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (2, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (3, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (4, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (5, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (6, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (7, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (8, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (9, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (10, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (11, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (12, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (13, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (14, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (15, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (16, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (17, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (18, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into book_storage (book_copy_id, storage_id, start_date) values (19, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (1, 1, '2018-03-23', '2020-07-06');
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (2, 1, '2020-01-03', '2020-01-03');
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (3, 1, '1997-05-28', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (4, 1, '2015-12-13', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (5, 1, '2012-03-11', '2013-03-11');
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (6, 1, '2019-12-01', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (7, 1, '2015-01-18', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (8, 1, '1994-12-01', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (9, 1, '2018-05-17', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (10, 2, '2004-05-29', '2005-05-14');
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (11, 2, '2001-02-05', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (12, 2, '1999-01-25', '2001-06-22');
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (13, 2, '1998-11-02', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (14, 2, '2003-10-17', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (15, 2, '2001-11-17', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (16, 2, '2004-10-24', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (17, 2, '1997-11-07', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (18, 2, '2008-12-31', null);
+insert into book_storage (book_copy_id, storage_id, start_date, end_date) values (19, 2, '2003-06-29', null);
 
 
 create table if not exists author (
@@ -252,21 +252,21 @@ create table if not exists purchase (
     foreign key(book_copy_id) references book_copy(book_copy_id)
 );
 
-insert into purchase (book_copy_id, created_date) values (1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (3, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (4, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (5, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (6, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (7, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (8, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (9, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (10, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (11, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (12, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (13, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (14, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into purchase (book_copy_id, created_date) values (15, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into purchase (book_copy_id, created_date) values (1, '1997-04-05');
+insert into purchase (book_copy_id, created_date) values (2, '2010-01-04');
+insert into purchase (book_copy_id, created_date) values (3, '2010-04-23');
+insert into purchase (book_copy_id, created_date) values (4, '2000-12-10');
+insert into purchase (book_copy_id, created_date) values (5, '2007-12-18');
+insert into purchase (book_copy_id, created_date) values (6, '2016-05-27');
+insert into purchase (book_copy_id, created_date) values (7, '2010-03-08');
+insert into purchase (book_copy_id, created_date) values (8, '2008-06-30');
+insert into purchase (book_copy_id, created_date) values (9, '2018-09-29');
+insert into purchase (book_copy_id, created_date) values (10, '2020-04-08');
+insert into purchase (book_copy_id, created_date) values (11, '1997-02-27');
+insert into purchase (book_copy_id, created_date) values (12, '2013-12-05');
+insert into purchase (book_copy_id, created_date) values (13, '2002-10-29');
+insert into purchase (book_copy_id, created_date) values (14, '2006-07-13');
+insert into purchase (book_copy_id, created_date) values (15, '2003-08-05');
 
 
 
@@ -284,18 +284,18 @@ create table if not exists client (
 );
 
 
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Pepe', 'Buljubasich','7755550127', '2025550183', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Pepe', 'Buljubasich', '7755550127', '2025550183', '2005-03-06');
 insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Marcelo', 'Gallardo', '7755550139', '2025550198', '2019-07-28');
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Martiniano', 'Molina', '7755550137', '2025550134', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('German', 'Lux', '7755550118', '2025550185', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Pity', 'Martinez', '7755550180', '2025550119', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Juanfer', 'Quintero', '7755550153', '2025550166', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Rafael', 'Borre', '7755550160', '2025550121', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Franco', 'Armani', '7755550168', '2025550144', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Lucas', 'Pratto', '7755550106', '2025550171', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Nacho', 'Fernandez', '7755550169', '2025550135', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Leo', 'Ponzio', '7755550194', '2025550149', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Gonzalo', 'Montiel', '7755550102', '2025550107', DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Martiniano', 'Molina', '7755550137', '2025550134', '1994-07-13');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('German', 'Lux', '7755550118', '2025550185', '2018-09-04');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Pity', 'Martinez', '7755550180', '2025550119', '2007-01-29');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Juanfer', 'Quintero', '7755550153', '2025550166', '2013-07-18');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Rafael', 'Borre', '7755550160', '2025550121', '1998-07-13');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Franco', 'Armani', '7755550168', '2025550144', '2013-08-01');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Lucas', 'Pratto', '7755550106', '2025550171', '1996-12-25');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Nacho', 'Fernandez', '7755550169', '2025550135', '2005-09-23');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Leo', 'Ponzio', '7755550194', '2025550149', '2017-02-09');
+insert into client (first_name, last_name, phone_number, mobile_number, created_date) values ('Gonzalo', 'Montiel', '7755550102', '2025550107', '2020-05-29');
 
 
 -- EMPLOYEE
@@ -365,19 +365,19 @@ create table if not exists sale (
 	foreign key(employee_id) references employee(employee_id)
 );
 
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 1, 4, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 2, 6, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (3, 3, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 4, 9, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 5, 3, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (3, 6, 4, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 7, 5, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 8, 6, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 9, 7, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 1, 8, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 2, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 9, 9, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 8, 7, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 1, 4, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 2, 6, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (3, 3, 2, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 4, 9, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 5, 3, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (3, 6, 4, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 7, 5, '2002-10-30');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 8, 6, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 9, 7, '2015-11-26');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 1, 8, '1993-08-16');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 2, 1, '2020-07-29');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (2, 9, 9, '2017-12-11');
+insert into sale (payment_type_id, client_id, employee_id, created_date) values (1, 8, 7, '2020-07-29');
 
 
 create table if not exists book_sale (
@@ -472,7 +472,7 @@ insert into book_sale_delivery (delivery_id, book_sale_id) values (6, 6);
 insert into book_sale_delivery (delivery_id, book_sale_id) values (7, 7);
 insert into book_sale_delivery (delivery_id, book_sale_id) values (8, 8);
 insert into book_sale_delivery (delivery_id, book_sale_id) values (9, 9);
-insert into book_sale_delivery (delivery_id, book_sale_id) values (38, 10);
+insert into book_sale_delivery (delivery_id, book_sale_id) values (10, 10);
 
 
 -- STORE_BUY
@@ -488,23 +488,23 @@ create table if not exists oorder (
 		CONSTRAINT UNIQUE (client_id, book_id)
 );
 
-insert into oorder (client_id, book_id, created_date) values (1, 1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (2, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (3, 3, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (4, 4, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (5, 5, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (6, 6, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (7, 7, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (8, 8, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (9, 9, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 3, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 4, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 5, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 6, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 7, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 8, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into oorder (client_id, book_id, created_date) values (1, 9, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into oorder (client_id, book_id, created_date) values (1, 1, '1994-01-28');
+insert into oorder (client_id, book_id, created_date) values (2, 2, '2018-03-24');
+insert into oorder (client_id, book_id, created_date) values (3, 3, '2006-03-14');
+insert into oorder (client_id, book_id, created_date) values (4, 4, '2010-06-27');
+insert into oorder (client_id, book_id, created_date) values (5, 5, '2013-04-07');
+insert into oorder (client_id, book_id, created_date) values (6, 6, '2014-04-16');
+insert into oorder (client_id, book_id, created_date) values (7, 7, '2011-01-27');
+insert into oorder (client_id, book_id, created_date) values (8, 8, '2019-04-19');
+insert into oorder (client_id, book_id, created_date) values (9, 9, '2015-04-26');
+insert into oorder (client_id, book_id, created_date) values (1, 2, '1998-02-09');
+insert into oorder (client_id, book_id, created_date) values (1, 3, '2006-02-26');
+insert into oorder (client_id, book_id, created_date) values (1, 4, '2015-11-14');
+insert into oorder (client_id, book_id, created_date) values (1, 5, '2012-12-03');
+insert into oorder (client_id, book_id, created_date) values (1, 6, '1996-06-08');
+insert into oorder (client_id, book_id, created_date) values (1, 7, '2004-12-17');
+insert into oorder (client_id, book_id, created_date) values (1, 8, '2014-12-06');
+insert into oorder (client_id, book_id, created_date) values (1, 9, '2011-10-23');
 
 
 
@@ -583,26 +583,26 @@ insert into employee_schedule (employee_id, month_id, year_id, hours_count) valu
 create table if not exists employee_history (
 		employee_history_id int unsigned auto_increment primary key,
     employee_id int unsigned not null,
-    salary int unsigned not null,
+    hourly_salary int unsigned not null,
 		start_date date not null,
 		end_date date null,
     foreign key(employee_id) references employee(employee_id),
 		CONSTRAINT UNIQUE (employee_id, start_date)
 );
 
-insert into employee_history (employee_id, salary, start_date) values (1, 5000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (2, 5500, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (3, 4500, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (4, 6000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (5, 10000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (6, 4000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (7, 5000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (8, 5500, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (9, 4500, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (10, 6000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (11, 10000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (12, 4000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into employee_history (employee_id, salary, start_date) values (13, 3000, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
+insert into employee_history (employee_id, hourly_salary, start_date) values (1, 44, '1993-09-03');
+insert into employee_history (employee_id, hourly_salary, start_date) values (2, 30, '1994-07-03');
+insert into employee_history (employee_id, hourly_salary, start_date) values (3, 30, '1998-04-19');
+insert into employee_history (employee_id, hourly_salary, start_date) values (4, 29, '2014-10-13');
+insert into employee_history (employee_id, hourly_salary, start_date) values (5, 33, '2003-09-06');
+insert into employee_history (employee_id, hourly_salary, start_date) values (6, 30, '2008-03-25');
+insert into employee_history (employee_id, hourly_salary, start_date) values (7, 67, '2009-07-18');
+insert into employee_history (employee_id, hourly_salary, start_date) values (8, 50, '2002-06-14');
+insert into employee_history (employee_id, hourly_salary, start_date) values (9, 53, '2017-10-20');
+insert into employee_history (employee_id, hourly_salary, start_date) values (10, 45, '2006-04-27');
+insert into employee_history (employee_id, hourly_salary, start_date) values (11, 100, '2012-05-15');
+insert into employee_history (employee_id, hourly_salary, start_date) values (12, 80, '1994-12-08');
+insert into employee_history (employee_id, hourly_salary, start_date) values (13, 70, '1999-02-16');
 
 create table if not exists expenses_type (
 		expenses_type_id int unsigned auto_increment primary key,
@@ -703,397 +703,9 @@ create table if not exists communication (
 );
 
 
-insert into communication (order_id, created_date) values (1, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into communication (order_id, created_date) values (2, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into communication (order_id, created_date) values (3, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into communication (order_id, created_date) values (4, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into communication (order_id, created_date) values (5, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-insert into communication (order_id, created_date) values (6, DATE(NOW() - INTERVAL FLOOR(RAND() * 10000) DAY));
-
-
-
-# 1
-select count(b.book_id)
-from book b
-  join book_author ba using (book_id)
-  join author a using (author_id)
-where b.book_name like '%john%' or a.first_name like '%john%' or a.last_name like '%john%'
-# 2
-select
-  first_name,
-  last_name
-    created_date
-from client
-order by created_date
-limit 1;
-#3
-select
-  b.book_name,
-  eb.publication_year,
-  weight,
-  amount_pages,
-  bt.language_name,
-  bs.start_date
-from book_copy
-  join book_storage bs using (book_copy_id)
-  join editorial_book eb using (editorial_book_id)
-  join book b using (book_id)
-  join book_translation bt using (book_id)
-where end_date is null
-order by bs.start_date
-limit 1;
-#4
-select
-  b.book_name,
-  c2.first_name,
-  last_name,
-  oo.created_date
-from oorder oo
-  left join communication c using (order_id)
-  join book b using (book_id)
-  join client c2 using (client_id)
-where communication_id is null
-order by oo.created_date;
-
-#5
-
-select count(bs.sale_id)
-from sale
-  join book_sale bs using (sale_id)
-  join book_copy copy2 using (book_copy_id)
-  join editorial_book eb using (editorial_book_id)
-  join book b using (book_id)
-  join book_author ba using (book_id)
-  join author a using (author_id)
-where b.book_name like '%Harry%' or a.first_name like '%Harry%' or a.last_name like '%Harry%';
-#6
-select
-  count(book_sale_id),
-  a.author_id,
-  a.first_name,
-  a.last_name
-from sale
-  join book_sale bs using (sale_id)
-  join book_copy copy2 using (book_copy_id)
-  join editorial_book book using (editorial_book_id)
-  join book_author ba using (book_id)
-  join author a using (author_id)
-where created_date > '1900-01-01' and created_date < '2010-01-01'
-group by author_id
-order by 1 desc
-limit 1;
-
-#7
-select
-  count(sale_id),
-  c.client_id,
-  c.first_name,
-  c.last_name
-from sale
-  join client c using (client_id)
-group by c.client_id
-order by 1 desc
-limit 3;
-
-#8
-select
-  count(b.book_id),
-  b.book_id,
-  b.book_name
-from book b
-  join book_translation translation using (book_id)
-group by b.book_id
-order by 1 desc
-limit 1;
-
-#9
-select
-  s.created_date,
-  (copy2.original_price + copy2.profit),
-  b.book_name as final_price
-from sale s
-  join client c using (client_id)
-  join book_sale using (sale_id)
-  join book_copy copy2 using (book_copy_id)
-  join editorial_book book2 using (editorial_book_id)
-  join book b using (book_id)
-where first_name = 'Lucas' and last_name = 'Pratto'
-order by c.created_date;
-
-#10 check
-select
-  oorder.*,
-  (CASE
-   WHEN orders_with_com.order_id is null
-     THEN false
-   ELSE true
-   END) as was_found,
-  (CASE
-   WHEN orders_with_sale.order_id is null
-     THEN false
-   ELSE true
-   END) as was_aquired
-from oorder
-  left join (
-              select oorder.order_id
-              from oorder
-                join communication c on oorder.order_id = c.order_id
-              where client_id = 1
-            ) as orders_with_com
-  using (order_id)
-  left join (
-              select oo.order_id
-              from oorder oo
-                join sale s using (client_id)
-                join book_sale bs using (sale_id)
-                join book_copy copy2 using (book_copy_id)
-                join editorial_book book2 using (editorial_book_id)
-              where s.created_date >= oo.created_date
-                    and oo.client_id = 1
-            ) as orders_with_sale
-  using (order_id)
-where client_id = 1;
-
-#
-# select order_id
-# from oorder
-#   join communication c on oorder.order_id = c.order_id
-# where client_id = 1
-# ) as founded
-#
-# select oo.order_id, oo.book_id
-# from oorder oo
-#   join sale s using (client_id)
-#   join book_sale bs using (sale_id)
-#   join book_copy copy2 using (book_copy_id)
-#   join book b on copy2.book_id = b.book_id
-# where s.created_date >= oo.created_date
-#       and oo.client_id = 1
-#
-#
-# select * from book_sale;
-# #	order_id	client_id	book_id
-# 4	13	1	3
-
-#11
-select
-  delivery_by_book.book_name,
-  delivery_by_book.delivery_name,
-  delivery_by_book.company_name,
-  (delivery_by_book.price_per_kilo * eb.weight) as delivery_price
-from (select *
-      from book b, delivery_type d) delivery_by_book
-  join editorial_book eb using (book_id)
-#12
-
-select
-  book_name,
-  tracking_number,
-  delivery_name,
-  company_name,
-  delivery_status_name
-from delivery
-  join book_sale_delivery delivery2 on delivery.delivery_id = delivery2.delivery_id
-  join delivery_type t on delivery.delivery_type_id = t.delivery_type_id
-  join delivery_status s on delivery.delivery_status_id = s.delivery_status_id
-  join book_sale sale on delivery2.book_sale_id = sale.book_sale_id
-  join book_copy copy2 on sale.book_copy_id = copy2.book_copy_id
-  join editorial_book book2 using (editorial_book_id)
-  join book b using (book_id)
-  join (
-         select
-           count(bs.book_sale_id),
-           sale_id
-         from book_sale bs
-           join book_sale_delivery delivery on bs.book_sale_id = delivery.book_sale_id
-           join delivery d on delivery.delivery_id = d.delivery_id
-           join sale using (sale_id)
-         where client_id = 1
-         group by sale_id
-         having count(bs.book_sale_id) > 1
-       ) splitted_deliveries using (sale_id);
-
-#13
-
-select delivery_status_name
-from delivery_status
-  join delivery d using (delivery_status_id)
-where tracking_number = '1f109e42-d191-11ea-bcfb-447066ae380e';
-
-#14
-select SUM(weight * price_per_kilo) total
-from book_sale_delivery
-  join book_sale sale on book_sale_delivery.book_sale_id = sale.book_sale_id
-  join delivery d on book_sale_delivery.delivery_id = d.delivery_id
-  join delivery_type t on d.delivery_type_id = t.delivery_type_id
-  join book_copy copy2 on sale.book_copy_id = copy2.book_copy_id
-  join editorial_book book2 using (editorial_book_id)
-  join sale s on sale.sale_id = s.sale_id
-
-where company_name = 'XPress'
-      and month(s.created_date) = 10;
-#15
-select sum(profit + original_price) as total
-from book_sale bs
-  join book_copy copy2 on bs.book_copy_id = copy2.book_copy_id
-  join sale s using (sale_id)
-  join payment_type t2 using (payment_type_id)
-where payment_name = 'Bit'
-      and month(s.created_date) = 10;
-
-#16
-
-
-select
-  book_name,
-  first_name,
-  last_name,
-  (profit + original_price) as final_price
-from book_sale bs
-  join book_copy copy2 using (book_copy_id)
-  join sale s using (sale_id)
-  join payment_type t2 using (payment_type_id)
-  join editorial_book eb using (editorial_book_id)
-  join book b using (book_id)
-  join client c using (client_id)
-where s.created_date < NOW() and s.created_date > DATE_ADD(NOW(), INTERVAL -12 MONTH)
-      and profit > (select avg(profit) as total
-                    from book_sale bs
-                      join book_copy copy2 on bs.book_copy_id = copy2.book_copy_id
-                      join sale s using (sale_id)
-                      join payment_type t2 using (payment_type_id);
-
-#17
-
-select
-  count(book_delivery_id),
-  company_name
-from book_sale_delivery bs
-  join book_sale sale on bs.book_sale_id = sale.book_sale_id
-  join delivery d on bs.delivery_id = d.delivery_id
-  join delivery_type t on d.delivery_type_id = t.delivery_type_id
-  join book_copy copy2 on sale.book_copy_id = copy2.book_copy_id
-  join editorial_book book2 using (editorial_book_id)
-  join sale s on sale.sale_id = s.sale_id
-where s.created_date < NOW() and s.created_date > DATE_ADD(NOW(), INTERVAL -12 MONTH)
-group by company_name;
-
-#18
-select
-  book_name,
-  tracking_number,
-  delivery_status_name,
-  delivery_name,
-  company_name
-from delivery
-  join (
-         select
-           count(distinct book.editorial_book_id),
-           book_id,
-           delivery2.delivery_id
-         from delivery
-           # select delivery2.delivery_id, book_id, book.editorial_book_id from delivery
-           join book_sale_delivery delivery2 on delivery.delivery_id = delivery2.delivery_id
-           join book_sale sale on delivery2.book_sale_id = sale.book_sale_id
-           join book_copy copy2 on sale.book_copy_id = copy2.book_copy_id
-           join editorial_book book on copy2.editorial_book_id = book.editorial_book_id
-         group by book_id, delivery2.delivery_id
-         having count(distinct book.editorial_book_id) > 1
-       ) multiple_edition_deliveries using (delivery_id)
-  join delivery_status s using (delivery_status_id)
-  join delivery_type t using (delivery_type_id)
-  join book using (book_id);
-#19
-
-select *
-from client
-where client_id not in (
-  select client_id
-  from sale s
-  where s.created_date < NOW() and s.created_date > DATE_ADD(NOW(), INTERVAL -24 MONTH)
-);
-
-#20 check
-
-select *
-from client
-where client_id in (
-  select o.client_id
-  from communication c
-    join oorder o using (order_id)
-    join editorial_book using (book_id)
-    join book_copy copy2 using (editorial_book_id)
-    join book_sale sale using (book_copy_id)
-    join editorial_book bought_book on copy2.editorial_book_id = bought_book.editorial_book_id
-    join sale s using (sale_id)
-  where c.created_date < DATE_ADD(NOW(), INTERVAL -14 DAY)
-        and bought_book.book_id = editorial_book.book_id
-        and s.client_id = o.client_id
-        and s.created_date >= c.created_date
-);
-
-#21
-drop table calendar;
-CREATE TEMPORARY TABLE if not exists calendar (dd varchar(20) not null unique);
-  insert into calendar (dd)
-    select * from
-    (select adddate('1970-01-01',t4*10000 + t3*1000 + t2*100 + t1*10 + t0) dd from
-     (select 0 t0 union select 1 union select 2 union select 3 union select 4 union select 5 union select 6 union select 7 union select 8 union select 9) t0,
-     (select 0 t1 union select 1 union select 2 union select 3 union select 4 union select 5 union select 6 union select 7 union select 8 union select 9) t1,
-     (select 0 t2 union select 1 union select 2 union select 3 union select 4 union select 5 union select 6 union select 7 union select 8 union select 9) t2,
-     (select 0 t3 union select 1 union select 2 union select 3 union select 4 union select 5 union select 6 union select 7 union select 8 union select 9) t3,
-     (select 0 t4 union select 1 union select 2 union select 3 union select 4 union select 5 union select 6 union select 7 union select 8 union select 9) t4) v
-    where dd between (select min(start_date) from book_storage bs
-    join storage s using (storage_id)
-    where storage_name = 'Warehouse') and NOW()
-    and dd like '%-01';
-  select * from calendar;
-
-select
-  MONTH(dd),
-  YEAR(dd),
-  sum(is_bw)
-from (
-  SELECT
-    c.dd,
-    bs.book_copy_id,
-    bs.start_date,
-    IFNULL(bs.end_date, DATE(NOW())) as end_date,
-    (CASE
-        WHEN c.dd between start_date and IFNULL(bs.end_date, DATE(NOW()))
-          THEN 1
-        ELSE 0
-        END)                         as is_bw
-  from calendar c, book_storage bs
-    join storage s using (storage_id)
-  where storage_name = 'Warehouse'
-) books_per_month
-group by 1, 2
-order by 2, 1
-
-#22
-select
-  count(book_copy_id),
-  sum(original_price)
-from purchase
-  join book_copy copy2 using (book_copy_id)
-where created_date between '1990-01-01' and '2010-01-01'
-
-#23
-select (select sum(original_price + profit)
-        from sale
-          join book_sale bs on sale.sale_id = bs.sale_id
-          join book_copy copy2 on bs.book_copy_id = copy2.book_copy_id
-        where MONTH(created_date) = 7) - (select sum(original_price)
-                                          from purchase
-                                            join book_copy copy2 using (book_copy_id)
-                                          where MONTH(created_date) = 7) as month_profit
-
-
-
-#24
-select month(created_date), year(created_date), count(sale_id) from sale
-group by 1,2
-
-#25
-#26
+insert into communication (order_id, created_date) values (1, '2020-07-01');
+insert into communication (order_id, created_date) values (2, '2020-07-05');
+insert into communication (order_id, created_date) values (3, '2020-05-07');
+insert into communication (order_id, created_date) values (4, '2020-07-28');
+insert into communication (order_id, created_date) values (5, '2020-07-28');
+insert into communication (order_id, created_date) values (6, '2016-03-05');
