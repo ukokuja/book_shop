@@ -7,10 +7,14 @@ Steps:
 
 1. Change database details in database-detail.h file.
 
-2. To run example
+2. Run DB Defintion.sql
+
+3. Run DB Data.sql
+
+4. To run example
     $ make
 
-3. For installing MySQL Connector for C++
+5. For installing MySQL Connector for C++
     $ make install
 
 
